@@ -5,6 +5,9 @@
  */
 package player.skin;
 
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
 /**
@@ -17,5 +20,13 @@ public class Skin extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600,520);
         setVisible(true);
+        showWinowIcon();
+    }
+    private void showWinowIcon(){
+        try {
+            setIconImage(ImageIO.read(new File("icons/sweetPlayer.jpg")));
+        }catch (IOException exc) {
+            exc.printStackTrace();
+        }
     }
 }

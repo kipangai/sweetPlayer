@@ -5,6 +5,8 @@
  */
 package player;
 
+import player.skin.Skin;
+
 /**
  *
  * @author kipanga
@@ -16,6 +18,7 @@ public class Player {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        new Skin();
     }
     
 }

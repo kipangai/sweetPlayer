@@ -5,10 +5,17 @@
  */
 package player.skin;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author kipanga
  */
-public class Skin {
-    
+public class Skin extends JFrame{
+    public Skin(){
+        super("SweetPlayer");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(600,520);
+        setVisible(true);
+    }
 }

@@ -20,9 +20,9 @@ public class Skin extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600,520);
         setVisible(true);
-        showWinowIcon();
+        showWindowIcon();
     }
-    private void showWinowIcon(){
+    private void showWindowIcon(){
         try {
             setIconImage(ImageIO.read(new File("icons/sweetPlayer.jpg")));
         }catch (IOException exc) {
